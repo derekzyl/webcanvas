@@ -24,7 +24,7 @@ function draw() {
   if (canvas?.getContext) {
     const context = canvas?.getContext("2d");
 
-    function fill_rect(color: color, shape: rectShape) {
+    function fill_rect(color: color, shape: rectShape, child?: any) {
       const cool_color = `rgb(${color.red},${color.green},${color.blue})`;
       context!.fillStyle = cool_color;
       context!.fillRect(shape.x, shape.y, shape.width, shape.height);
@@ -47,6 +47,13 @@ function draw() {
       { red: 255, green: 0, blue: 100 },
       { x: 120, y: 120, width: 100, height: 100 }
     );
+
+    context?.beginPath();
+    context?.moveTo(250, 300);
+    context?.lineTo(300, 350);
+    context?.lineTo(250, 350);
+    context?.lineTo(250, 300);
+    context?.fill();
   } else {
     canvas!.innerHTML! = /*html*/ `
   <div>oops unsupported</div>  
