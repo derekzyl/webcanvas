@@ -1,3 +1,33 @@
-#app {
+.main-sector {
+  display: block;
+}
+
+.left-sidebar {
+  border: 1px solid blue;
+  width: 20%;
+}
+
+#canvas {
   border: 1px solid red;
+  width: 80%;
+}
+.right-sidebar {
+  border: 1px solid green;
+  width: 20%x;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 1px solid rgb(195, 255, 0);
+}
+.main-section {
+  display: flex;
+  justify-content: center;
+  height: 200vh;
 }

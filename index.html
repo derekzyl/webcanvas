@@ -4,33 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>web canvas</title>
   </head>
-  <style>
-    .can {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-    }
-    .tester {
-      display: flex;
-      position: relative;
-      z-index: 200;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      font-size: large;
-    }
-    canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  </style>
+
   <body>
-    <div class="can">
-      <canvas id="canvas"> </canvas>
-      <div class="tester">hello world</div>
+    <div class="main-sector">
+      <div class="nav-bar">nav bar</div>
+
+      <div class="main-section">
+        <div class="left-sidebar">
+          <div class="shape" id="rectangle">Rectangle</div>
+          <div class="shape" id="circle">Circle</div>
+          <div class="shape" id="triangle">Triangle</div>
+        </div>
+        <canvas id="canvas"> </canvas>
+        <div class="right-sidebar">right side bar</div>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
